@@ -59,8 +59,8 @@ body {
 nav {
 	background-color: #463E3F;
 	height: 35px;
-	padding-left:10px;
 	width: 100%;
+	margin: 0 auto 20px auto;
 }
 
 .sign_in_container {
@@ -72,11 +72,6 @@ nav {
 	height:100px;
 	width: 50%;
 	padding-bottom: 100px;
-}
-
-nav {
-	margin: 0 auto 20px auto;
-	width: 100%;
 }
 
 header {
