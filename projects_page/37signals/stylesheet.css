@@ -65,12 +65,25 @@ header{
 	clear:both;
 	width: 100%;
 }
-.products {
+.products-container {
 	width:100%;
-	display:inline-block;
-	float: center;
+}
+.products {
+	text-align: center;
 }
 
+.box {
+	text-decoration:none;
+	float:center;
+	display: inline-block;
+	text-align:center;
+	width: 160px;
+	margin: 15px 20px;
+	padding: 20px 10px 10px 10px;
+	border: 1px solid #e0e0e0;
+	border-radius: 5px;
+	background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#fff), to(#efefef));
+}
 /*elements*/
 
 nav li a {
@@ -102,41 +115,10 @@ h1 {
 }
 h5 {
 	text-align: center;
-	font-family: "Times New Roman", Helvetica;
-	font-size: 20px;
-	font-weight:500;
+	font-family: "Times New Roman";
+	font-size: 30px;
+	font-weight:bold;
 	margin-bottom:20px;
-}
-
-#basecamp{
-	display: inline-block;
-	text-align:center;
-	width: 160px;
-	margin: 15px 20px;
-	padding: 20px 10px;
-	border: 1px solid #efefef;
-	border-radius: 5px;
-	background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#fff), to(#efefef));
-}
-#highrise{
-	display: inline-block;
-	text-align:center;
-	width: 160px;
-	margin: 15px 20px;
-	padding: 20px 10px;
-	border: 1px solid #efefef;
-	border-radius: 5px;
-	background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#fff), to(#efefef));
-}
-#campfire{
-	display: inline-block;
-	text-align:center;
-	width: 160px;
-	margin: 15px 20px;
-	padding: 20px 10px;
-	border: 1px solid #efefef;
-	border-radius: 5px;
-	background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#fff), to(#efefef));
 }
 
 h3 {
@@ -167,7 +149,7 @@ h5 {
 span {
 	font-size:small;
 	vertical-align:top;
-	text-decoration:none;
+	text-decoration:none !important;
 	color: #ccc;
 }
 /*state*/
