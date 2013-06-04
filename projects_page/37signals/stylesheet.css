@@ -67,8 +67,6 @@ header{
 }
 .products-container {
 	width:100%;
-}
-.products {
 	text-align: center;
 }
 
@@ -123,7 +121,6 @@ h5 {
 
 h3 {
 	font-family:'Lucida Grande', sans-serif;
-	text-decoration:underline;
 	font-weight: bold;
 	font-size: 20px;
 	color: #336699;
@@ -145,13 +142,17 @@ h5 {
 	margin-bottom: 15px;
 	color: #222;
 }
+.product {
+	text-decoration:underline;
+}
 
-span {
-	font-size:small;
+.super {
+	text-decoration:none;
+	font-size:10px;
 	vertical-align:top;
-	text-decoration:none !important;
 	color: #ccc;
 }
+
 /*state*/
 nav li a:hover {
 	color:#8face6;
