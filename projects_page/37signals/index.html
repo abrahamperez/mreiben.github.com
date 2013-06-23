@@ -1,10 +1,11 @@
 <!doctype html>
-
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
 		<title>37signals: Web-based collaboration apps for small business</title>
 		<link rel="stylesheet" href="stylesheet.css">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+		<script src="application.js"></script>
 	</head>
 	
 	<body>
@@ -21,32 +22,61 @@
 		<header>
 			<img id="37signals" src="logo-37s-large.png" alt="37signals-logo">
 		</header>
-		<h1>Making collaboration productive and<br>enjoyable for people every day.</h1>
-		<h5>Frustration-free web-based apps for collaboration,sharing information, and making decisions.</h5>
+		<div id="banner-holder">
+			<div id="banner">
+				<h1>Making collaboration productive and<br>enjoyable for people every day.</h1>
+				<h5>Frustration-free web-based apps for collaboration,sharing information, and making decisions.</h5>
+			</div>
+			<div id="banner-main">
+				<h1>Making collaboration productive and<br>enjoyable for people every day.</h1>
+				<h5>Frustration-free web-based apps for collaboration,sharing information, and making decisions.</h5>
+			</div>
+			<div id="basecamp-banner">
+				<p class="title-highlighted"><a href="#">Basecamp</a> is the project management tool you<br> wish you had on your last project.</p>
+				<p class="subtitle-highlighted">Are you still managing projects with email? Are you still using Excel for your to-do lists?  It's time to upgrade to Basecamp.<br>Manage projects and collaborate with your team and clients the modern way.</p>
+				<div class="arrow-container">
+					<img id="arrow-bc" src="arrow-right.png" alt="arrow-right">
+				</div>
+			</div>
+			<div id="highrise-banner">
+				<p class="title-highlighted"><a href="#">Highrise</a> remembers the important things <br>about people you'd normally forget.</p>
+				<p class="subtitle-highlighted">Keep a permanent record of people you do business with. Know who you talked to, when you talked to them, what was said, <br>and when to follow up next. Over 20,000,000 contacts are tracked using Highrise.</p>
+				<div class="arrow-container">
+					<img id="arrow-hr" src="arrow-right.png" alt="arrow-right">
+				</div>
+			</div>
+			<div id="campfire-banner">
+				<p class="title-highlighted"><span>From near or far, <a href="#">Campfire</a> helps teams work <br>together over the web in real-time.</span></p>
+				<p class="subtitle-highlighted">Share ideas, discussions, concepts, images, code samples, videos, mockups, and documents in a real-time private chat <br>room.  It's game changing.  We couldn't run our own business without Campfire.</p>
+				<div class="arrow-container">
+					<img id="arrow-cf" src="arrow-left.png" alt="arrow-left">
+				</div>
+			</div>
+		</div>
 		<div class="products-container">
-			<a href="#" class="box">
-				<div id="basecamp">
+			<a href="#" id="basecamp-box">
+				<span id="basecamp">
 				<img id="logo-bc" src="logo-bc.png" alt="logo-bc">
 				<h3><span class="product">Basecamp</span><span class="super">&reg;</span></h3>
 				<h4>Manage Projects</h4>
-				<h5>Used by millions for project management.</h5>
-				</div>
+				<h6>Used by millions for project management.</h6>
+				</span>
 			</a>
-			<a href="#" class="box">
-				<div id="highrise">
+			<a href="#" id="highrise-box">
+				<span id="highrise">
 				<img id="logo-hr" src="logo-hr.png" alt="logo-hr">
 				<h3><span class="product">Highrise</span><span class="super">&reg;</span></h3>
 				<h4>Manage Contacts</h4>
-				<h5>Know the people you do business with.</h5>
-				</div>
+				<h6>Know the people you do business with.</h6>
+				</span>
 			</a>
-			<a href="#" class="box">
-				<div id="campfire">	
+			<a href="#" id="campfire-box">
+				<span id="campfire">	
 				<img id="logo-cf" src="logo-cf.png" alt="logo-cf">
 				<h3><span class="product">Campfire</span><span class="super">TM</span></h3>
 				<h4>Work in Real-Time</h4>
-				<h5>Group chat rooms for your business.</h5>
-				</div>
+				<h6>Group chat rooms for your business.</h6>
+				</span>
 			</a>
 		</div>
 	</body>
