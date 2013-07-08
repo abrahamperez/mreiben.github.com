@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Jason's Huckle Buckle</title>
+		<link rel="stylesheet" href="stylesheet.css">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+		<script src="application.js"></script>
+	</head>
+	<body>
+		<div id="hot_cold_container">
+			<img id="hot-gray" src="hot-gray.png" alt="hot-gray">
+			<img id="hot-red" src="hot-red.png" alt="hot-red">
+			<img id="cold-gray" src="cold-gray.png" alt="cold-gray">
+			<img id="cold-blue" src="cold-blue.png" alt="cold-blue">
+		</div>
+		<div id="fire_holder">
+			<h1>I'm thinking of a number between 1 and 100... <br> Can you guess my number?</h1>
+			<img src="teepee_campfire.png" alt="teepee_campfire">
+		</div>
+		<div id="input_container">
+			<div id="guess_container">
+				<div id="guess_box_title">
+					<p>Enter your guess here:</p>
+				<input type="text" name="guess" id="guess" maxlength="3" autocomplete="off"><br>
+				<input type="submit" name="submit" id="submit" class="button">
+				</div>
+			</div>
+			<div id="guess_total">
+				<p>Guess Counter:</p>
+				<div id="counter">0
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

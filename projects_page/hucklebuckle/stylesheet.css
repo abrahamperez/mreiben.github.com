@@ -1,0 +1,153 @@
+/*Reset*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body {
+	font-family: Helvetica, Arial, Verdana, sans-serif;
+	line-height: 1;
+}
+
+/*layout*/
+html { 
+	background: url(gradient-blue.jpg) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	white-space:nowrap;
+}
+#hot_cold_container{
+	text-align:center;
+}
+#fire_holder{
+	text-align:center;	
+}
+#input_container{
+	width:100%;
+	text-align:center;
+}
+#guess_container{
+	display:inline-block;
+	text-align:center;
+	margin-right: 20px;
+}
+#guess_box_title, #guess_total {
+	display:inline-block;
+	font-family:'Lucida Grande', sans-serif;
+	font-weight: bold;
+	font-size: 40px;
+	color: #CFCFCF;
+	margin-top: 100px;
+	text-align:center;
+}
+#guess_total{
+	display:inline-block;
+	text-align:center;
+	font-size: 40px;
+	color: red;
+	text-align: center;
+	vertical-align: top;
+	margin-left: 20px;
+}
+
+/*elements*/
+#hot-gray {
+	display:inline-block;
+	width: 500px;
+	margin-top: 100px;
+	margin-right:75px;
+}
+
+#hot-red {
+	display:none;
+	width: 500px;
+	margin-top: 100px;
+	margin-right:75px;
+}
+
+#cold-gray {
+	display:inline-block;
+	width: 700px;
+	margin-top: 100px;
+	margin-left:75px;
+}
+
+#cold-blue {
+	display: none;
+	width: 700px;
+	margin-top: 100px;
+	margin-left:75px;
+}
+
+h1 {
+	font-family:'Lucida Grande', sans-serif;
+	font-weight: bold;
+	font-size: 50px;
+	color: #CFCFCF;
+	margin-top: 100px;
+	margin-bottom:200px;
+	line-height: 70px;
+}
+#guess {
+	height: 100px;
+	font-size: 70px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	width: 150px;
+	text-align:center;
+}
+#submit {
+	font-size: 45px;
+	border-radius: 7px;
+}
+/*state*/
+nav li a:hover {
+	color:#8face6;
+}
+
