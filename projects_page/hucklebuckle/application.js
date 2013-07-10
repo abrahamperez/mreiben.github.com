@@ -3,6 +3,7 @@ var randomNumber = Math.floor(Math.random()*101)
 var counter = 0;
 
 window.onload = function() {
+	event.preventDefault();
 	var submit = document.getElementById("submit");
 	var guess = document.getElementById("guess").value;
 	var reset = document.getElementById("reset");
