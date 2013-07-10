@@ -66,7 +66,7 @@ html {
 	text-align:center;
 }
 #fire_holder{
-	margin-top: 100px;
+	margin-top: 50px;
 	text-align:center;	
 }
 #input_container{
@@ -89,21 +89,21 @@ html {
 #current_guess {
 	display: block;
 	font-style: normal;
-	font-size: 80px;
+	font-size: 40px;
 }
 #hint_container {
 	display: block;
 	font-style:italic;
-	font-size: 40px;
+	font-size: 20px;
 	white-space:pre-wrap;
 }
 #guess_box_title, #guess_counter {
 	display:inline-block;
 	font-family:'Lucida Grande', sans-serif;
 	font-weight: bold;
-	font-size: 40px;
+	font-size: 20px;
 	color: #CFCFCF;
-	margin-top: 50px;
+	margin-top: 25px;
 	text-align:center;
 }
 #guess_counter{
@@ -115,61 +115,61 @@ html {
 /*elements*/
 #hot-gray {
 	display:inline-block;
-	width: 425px;
-	margin-top: 100px;
-	margin-right:75px;
+	width: 215px;
+	margin-top: 50px;
+	margin-right:30px;
 }
 
 #hot-red {
 	display:none;
-	width: 425px;
-	margin-top: 100px;
-	margin-right:75px;
+	width: 215px;
+	margin-top: 50px;
+	margin-right:30px;
 }
 
 #cold-gray {
 	display:inline-block;
-	width: 600px;
-	margin-top: 100px;
-	margin-left:75px;
+	width: 300px;
+	margin-top: 50px;
+	margin-left:30px;
 }
 #cold-blue {
 	display: none;
-	width: 600px;
-	margin-top: 100px;
-	margin-left:75px;
+	width: 300px;
+	margin-top: 50px;
+	margin-left:30px;
 }
 h1 {
 	font-family:'Lucida Grande', sans-serif;
 	font-weight: bold;
-	font-size: 40px;
+	font-size: 20px;
 	color: #CFCFCF;
-	margin-top: 50px;
-	margin-bottom:100px;
-	line-height: 50px;
+	margin-top: 25px;
+	margin-bottom:50px;
+	line-height: 25px;
 }
 #fire_start {
-	width: 500px;
+	width: 250px;
 }
 #fire_warm, #fire_cold, #fire_lit {
-	width: 500px;
+	width: 250px;
 	display: none;
 }
 #guess {
-	height: 70px;
-	font-size: 35px;
-	margin-top: 20px;
-	margin-bottom: 20px;
-	width: 150px;
+	height: 35px;
+	font-size: 18px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	width: 75px;
 	text-align:center;
 }
 #submit, #reset {
-	font-size: 40px;
+	font-size: 20px;
 	border-radius: 7px;
 }
 #counter {
-	font-size: 80px;
+	font-size: 40px;
 	font-weight:normal;
-	margin-top: 20px;
-	margin-bottom:10px;
+	margin-top: 10px;
+	margin-bottom:5px;
 }

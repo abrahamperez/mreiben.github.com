@@ -51,7 +51,7 @@ window.onload = function() {
 		if (guess == randomNumber) {
 		win();
 		}
-		else if (guess > 100 || guess < 1 || typeof guess == "string") {
+		else if (guess > 100 || guess < 1) {
 		document.getElementById("hint_container").innerHTML = "That guess was not a number between 1 and 100!";
 		document.getElementById("current_guess").innerHTML = guess;
 		}
