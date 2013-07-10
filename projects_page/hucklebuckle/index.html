@@ -16,20 +16,30 @@
 		</div>
 		<div id="fire_holder">
 			<h1>I'm thinking of a number between 1 and 100... <br> Can you guess my number?</h1>
-			<img src="teepee_campfire.png" alt="teepee_campfire">
+			<img id=fire_start src="teepee_campfire.png" alt="fire_start">
+			<img id=fire_warm src="teepee_campfire_warm.png" alt="fire_warm">
+			<img id=fire_lit src="teepee_campfire_lit.png" alt="fire_lit">
+			<img id=fire_cold src="teepee_campfire_cold.png" alt="fire_cold">
 		</div>
 		<div id="input_container">
 			<div id="guess_container">
 				<div id="guess_box_title">
 					<p>Enter your guess here:</p>
 				<input type="text" name="guess" id="guess" maxlength="3" autocomplete="off"><br>
-				<input type="submit" name="submit" id="submit" class="button">
+				<input type="button" name="submit" id="submit" value="Guess">
 				</div>
 			</div>
-			<div id="guess_total">
+			<div id="hint_box">
+				<div id="current_guess">
+				</div>
+				<div id="hint_container">
+				</div>
+			</div>
+			<div id="guess_counter">
 				<p>Guess Counter:</p>
 				<div id="counter">0
 				</div>
+				<input type="button" name="reset" id="reset" value="Reset">
 			</div>
 		</div>
 	</body>
