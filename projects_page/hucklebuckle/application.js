@@ -7,7 +7,7 @@ window.onload = function() {
 	var submit = document.getElementById("submit");
 	var guess = document.getElementById("guess").value;
 	var reset = document.getElementById("reset");
-	var lastGuess = 0;
+	var lastGuess = 51;
 
 //Set outcomes for user input
 	function warmer() {
