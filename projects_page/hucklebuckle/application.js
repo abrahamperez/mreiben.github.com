@@ -1,5 +1,5 @@
 //Pick random number
-var randomNumber = Math.floor(Math.random()*101)
+var randomNumber = Math.floor(Math.random()*101);
 var counter = 0;
 
 window.onload = function() {
@@ -82,6 +82,15 @@ window.onload = function() {
 	}
 //User reset
 	reset.onclick = function(){
-	location.reload();
+	var randomNumber = Math.floor(Math.random()*101);
+	var counter = 0;
+	var lastGuess = 51;
+	document.getElementById("fire_lit").style.display = "none";
+	document.getElementById("fire_cold").style.display = "none";
+	document.getElementById("fire_start").style.display = "inline";
+	document.getElementById("hot-red").style.display = "none";
+	document.getElementById("hot-gray").style.display = "inline-block";
+	document.getElementById("cold-blue").style.display = "none";
+	document.getElementById("cold-gray").style.display = "inline-block";
 	}
 }
