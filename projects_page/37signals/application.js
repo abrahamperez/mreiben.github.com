@@ -29,4 +29,7 @@ $(document).ready(function() {
 		$("#campfire-banner").hide();
 		$("#banner").show();
 	});
+	var today = new Date();
+	var weekList = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+	$("#dayOfWeek").html(weekList[today.getDay()]);
 });
