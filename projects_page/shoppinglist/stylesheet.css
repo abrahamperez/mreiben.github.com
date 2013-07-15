@@ -1,22 +1,14 @@
 /*Reset*/
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
-   License: none (public domain)
-*/
+   License: none (public domain)*/
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,b, u, i, center, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary, time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -47,11 +39,84 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-
 body {
 	font-family: Helvetica, Arial, Verdana, sans-serif;
 	line-height: 1;
 }
 
+/*fonts*/
+@font-face { font-family: ArchitectsDaughter; src: url('ArchitectsDaughter.ttf');}
 /*layout*/
+html {
+	height:100%;
+}
+body {
+	background: -ms-linear-gradient(bottom, #FFFFFF 0%, #2378D9 100%);
+	background: -moz-linear-gradient(bottom, #FFFFFF 0%, #2378D9 100%);
+	background: -o-linear-gradient(bottom, #FFFFFF 0%, #2378D9 100%);
+	background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #FFFFFF), color-stop(1, #2378D9));
+	background: -webkit-linear-gradient(bottom, #FFFFFF 0%, #2378D9 100%);
+	background-repeat: no-repeat;
+	background-size: cover;
+	white-space:nowrap;
+	height:100%;
+}
+#page_holder {
+	position:relative;
+	width: 600px;
+	margin: 10px auto;
+	text-align: center;
+	background-color: #ffffff;
+	border: 2px solid black;
+	border-radius: 10px;
+}
+#input_box {
+}
+#list_holder {
+}
+#clear_holder {
+	text-align: center;
+	margin: 20px 310px 20px 0;
+}
+/*elements*/
+h1 {
+	font-family:'ArchitectsDaughter', sans-serif;
+	font-size:50px;
+	color: #4A4A4A;
+	padding-top: 15px;
+	padding-bottom: 25px;
+}
+.clicker {
+	font-size: 20px;
+}
+#item_input {
 
+}
+#sort_button {
+
+}
+#items_list{
+	margin:10px 0 10px 35px;
+	text-align:left;
+}
+.item_price{
+	height: 12px;
+}
+li {
+	font-family:'ArchitectsDaughter', sans-serif;
+	font-size:20px;
+	color: #4A4A4A;
+	max-width: 493px;
+	min-height: 42px;
+	border: 1px solid black;
+	border-radius: 5px;
+	padding: 15px 10px;
+	margin-bottom: 10px;
+	margin-left: 8px;
+}
+.item_type {
+	margin: 0 0;
+	padding: 0 0;
+	vertical-align: middle;
+	display:inline;
+}

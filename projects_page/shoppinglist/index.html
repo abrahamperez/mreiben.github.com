@@ -4,10 +4,52 @@
 		<meta charset="UTF-8">
 		<title>Jason's Shopping List APP</title>
 		<link rel="stylesheet" href="stylesheet.css">
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1/jquery-ui.min.js"></script>
 		<script src="application.js"></script>
 	</head>
 	<body>
-		
+		<div id="page_holder">
+			<h1>Shopping List</h1>
+			<div id="input_box">
+				<input type="button" class="clicker" id="add_button" value="Add Item">
+				<input type="text" class="clicker" id="item_input" placeholder="Your item..." autocomplete="off">
+				<select class="clicker" id="sort_button" value=>
+					<option value="sort by">Sort by...</option>
+					<option value="name">Sort by name</option>
+					<option value="type">Sort by type</option>
+					<option value="price">Sort by price</option>
+				</select>
+			</div>
+			<div id="list_holder">
+				<ul id="items_list">
+					<li class="ui-state-default" id="item1">
+						<input type="checkbox" class="checkbox" value="Item 1">Item 1
+						<select class="item_type" onchange="type_select()">
+							<option value="undefined">Type...</option>
+							<option value="groceries">Groceries</option>
+							<option value="household supplies">Supplies</option>
+							<option value="clothing">Clothing</option>
+							<option value="entertainment">Entertainment</option>
+						</select>
+						$<input type="text" class="clicker" class="item_price" size="6" placeholder="Price..." autocomplete="off">
+					</li>
+					<li class="ui-state-default" id="item2">
+						<input type="checkbox" class="checkbox" value="Item 2">Item 2
+						<select class="item_type" onchange="type_select()">
+							<option value="undefined">Type...</option>
+							<option value="groceries">Groceries</option>
+							<option value="household supplies">Supplies</option>
+							<option value="clothing">Clothing</option>
+							<option value="entertainment">Entertainment</option>
+						</select>
+						$<input type="text" class="clicker" class="item_price" size="6" placeholder="Price..." autocomplete="off">
+					</li>
+				</ul>
+			</div>
+			<div id="clear_holder">
+				<input type="button" class="clicker" id="clear_button" value="Clear Selected Items">
+			</div>
+		</div>
 	</body>
 </html>
