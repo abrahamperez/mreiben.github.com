@@ -48,7 +48,6 @@ body {
 @font-face { font-family: ArchitectsDaughter; src: url('ArchitectsDaughter.ttf');}
 /*layout*/
 html {
-	height:100%;
 }
 body {
 	background: -ms-linear-gradient(bottom, #FFFFFF 0%, #2378D9 100%);
