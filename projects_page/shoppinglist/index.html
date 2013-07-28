@@ -14,36 +14,41 @@
 			<div id="input_box">
 				<input type="button" class="clicker" id="add_button" value="Add Item">
 				<input type="text" class="clicker" id="item_input" placeholder="Your item..." autocomplete="off">
-				<select class="clicker" id="sort_button" value=>
-					<option value="sort by">Sort by...</option>
-					<option value="name">Sort by name</option>
-					<option value="type">Sort by type</option>
-					<option value="price">Sort by price</option>
-				</select>
+				<div id="price_holder">
+					Total $: <span id="totalPrice"></span> 
+				</div>
 			</div>
 			<div id="list_holder">
 				<ul id="items_list">
 					<li class="ui-state-default" id="item1">
-						<input type="checkbox" class="checkbox" value="Item 1">Item 1
-						<select class="item_type">
-							<option value="undefined">Type...</option>
-							<option value="groceries">Groceries</option>
-							<option value="supplies">Supplies</option>
-							<option value="clothing">Clothing</option>
-							<option value="entertainment">Entertainment</option>
-						</select>
-						$<input type="text" class="item_price" size="6" placeholder="Price..." autocomplete="off">
+						<div class="item_container">
+							<input type="checkbox" class="checkbox" value="Item 1">Item 1
+							<select class="item_type">
+								<option value="undefined">Type...</option>
+								<option value="groceries">Groceries</option>
+								<option value="supplies">Supplies</option>
+								<option value="clothing">Clothing</option>
+								<option value="entertainment">Entertainment</option>
+							</select>
+							<div class="price_input">
+								$<input type="text" class="item_price" size="6" placeholder="Price..." autocomplete="off">
+							</div>
+						</div>
 					</li>
 					<li class="ui-state-default" id="item2">
-						<input type="checkbox" class="checkbox" value="Item 2">Item 2
-						<select class="item_type">
-							<option value="undefined">Type...</option>
-							<option value="groceries">Groceries</option>
-							<option value="supplies">Supplies</option>
-							<option value="clothing">Clothing</option>
-							<option value="entertainment">Entertainment</option>
-						</select>
-						$<input type="text" class="item_price" size="6" placeholder="Price..." autocomplete="off">
+						<div class="item_container">
+							<input type="checkbox" class="checkbox" value="Item 2">Item 2
+							<select class="item_type">
+								<option value="undefined">Type...</option>
+								<option value="groceries">Groceries</option>
+								<option value="supplies">Supplies</option>
+								<option value="clothing">Clothing</option>
+								<option value="entertainment">Entertainment</option>
+							</select>
+							<div class="price_input">
+								$<input type="text" class="item_price" size="6" placeholder="Price..." autocomplete="off">
+							</div>
+						</div>
 					</li>
 				</ul>
 			</div>

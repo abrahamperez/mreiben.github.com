@@ -64,14 +64,21 @@ body {
 	position:relative;
 	width: 600px;
 	margin: 10px auto;
-	text-align: center;
 	background-color: #ffffff;
 	border: 2px solid black;
 	border-radius: 10px;
 }
 #input_box {
+	margin-left: 40px;
 }
-#list_holder {
+#price_holder {
+	display: inline-block;
+}
+.new_item_tag {
+	margin-left: 10px;
+}
+.price_input {
+	display: inline-block;
 }
 #clear_holder {
 	text-align: center;
@@ -84,22 +91,17 @@ h1 {
 	color: #4A4A4A;
 	padding-top: 15px;
 	padding-bottom: 25px;
+	text-align:center;
 }
 .clicker {
 	font-size: 20px;
 }
-#item_input {
-
-}
-#sort_button {
-
+.checkbox, .item_price, .item_type{
+	font-size:15px;
 }
 #items_list{
 	margin:10px 0 10px 35px;
 	text-align:left;
-}
-.item_price{
-	height: 12px;
 }
 li {
 	font-family:'ArchitectsDaughter', sans-serif;
@@ -110,8 +112,12 @@ li {
 	border: 1px solid black;
 	border-radius: 5px;
 	padding: 15px 10px;
-	margin-bottom: 10px;
+	margin-bottom: 15px;
 	margin-left: 8px;
+}
+.item_container{
+	margin-top: 10px;
+	display: inline-block;
 }
 .item_type {
 	margin: 0 0;
