@@ -19,7 +19,7 @@ $(document).ready(function() {
         choices: ["Light Roast", "City Roast", "Espresso Roast", "Dark Roast"],
         qNum : 2,
         correct : 0,
-        fact: "Dark or bold roasts actually have less caffeine than lighter roasts."
+        fact: "The roasting process burns sugars and compounds such as caffeine.  Dark or bold roasts actually have less caffeine than lighter roasts."
         },
         {
         question: "At which temperature does water most effectively extract coffee oils and flavors?",
@@ -33,7 +33,7 @@ $(document).ready(function() {
         choices: ["15 minutes", "2 hours", "1 day", "1 week"],
         qNum : 4,
         correct : 0,
-        fact: "Ground coffee oxygenates in as few as 15 minutes.  Whole bean coffee has less surface area and as a result stays fresh for approximately two weeks."
+        fact: "Ground coffee becomes stale in as few as 15 minutes.  Whole bean coffee has less surface area and as a result stays fresh for approximately two weeks."
     }]
     
     //global variables
