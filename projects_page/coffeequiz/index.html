@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Coffee Quiz</title>
+		<link rel="stylesheet" href="stylesheet.css">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+		<script src="application.js"></script>
+	</head>
+	<body>
+		<h1>Coffee Quiz</h1>
+		<div id="question_wrapper">
+			<span class="question">Question #1: Which country exports the most coffee by volume?</span><br>
+			<div id="answer_holder">
+				<input type="radio" name="option" class="option" value="0"><span class="answer">Colombia</span><br>
+				<input type="radio" name="option" class="option" value="1"><span class="answer">Guatemala</span><br>
+				<input type="radio" name="option" class="option" value="2"><span class="answer">Costa Rica</span><br>
+				<input type="radio" name="option" class="option" value="3"><span class="answer">Brazil</span><br>
+			</div>
+			<div id="button_holder">
+				<input type="button" id="submit" value="Submit Answer"><span id="hint"></span>
+				<input type="button" id="retry_button" value="Try Again!">
+			</div>
+
+		</div>
+	</body>
+	<div id="bottom">
+		<div id="score_holder">
+			<div id="question_score">
+				<img src="Coffee_Meter_0.png" class ="score_cup" id="score_cup0" alt="score_cup">
+				<img src="Coffee_Meter_1.png" class ="score_cup" id="score_cup1" alt="score_cup">
+				<img src="Coffee_Meter_2.png" class ="score_cup" id="score_cup2" alt="score_cup">
+				<img src="Coffee_Meter_3.png" class ="score_cup" id="score_cup3" alt="score_cup">
+				<img src="Coffee_Meter_4.png" class ="score_cup" id="score_cup4" alt="score_cup">
+				<img src="Coffee_Meter_5.png" class ="score_cup" id="score_cup5" alt="score_cup">
+			</div>
+			<div id="fact_holder">
+				<span id="last_question_fact">
+				</span>
+			</div>
+		</div>
+	</div>
+</html>
