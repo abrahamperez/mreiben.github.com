@@ -33,7 +33,7 @@ $(document).ready(function() {
         choices: ["15 minutes", "2 hours", "1 day", "1 week"],
         qNum : 4,
         correct : 0,
-        fact: "Whole bean coffee has less surface area and as a result stays fresh for approximately two weeks."
+        fact: "Ground coffee oxygenates in as few as 15 minutes.  Whole bean coffee has less surface area and as a result stays fresh for approximately two weeks."
     }]
     
     //global variables
