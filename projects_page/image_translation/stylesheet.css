@@ -45,4 +45,28 @@ body {
 }
 
 /*layout*/
+#image_canvas {
+	display: inline-block;
+}
+#status_holder {
+	display: none;
+}
+body {
+	width: 100%;
+}
+#banner {
 
+	display: block;
+	margin: 0 auto;
+}
+/*elements*/
+h1 {
+	font-size: 50px;
+}
+h3 {
+	font-size: 20px;
+}
+.photo {
+	width: 300px;
+	border: solid 1px white;
+}
