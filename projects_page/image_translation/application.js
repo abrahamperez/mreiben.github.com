@@ -38,10 +38,11 @@ $(document).ready(function() {
             .done(function(){
                 url_array.push(photo_url);
                 if (url_array.length == search_array.length) {
-                console.log(url_array);
-                for (var z in url_array) {
-                $('#image_canvas').append("<img class='photo' src='"+url_array[z]+"' id='image"+z+"' alt='image' />")
-                $('#status_holder').css("display", "none");
+                    console.log(url_array);
+                    for (var z in url_array) {
+                    console.log(z);
+                    $('#image_canvas').append("<img class='photo' src='"+url_array[z]+"' id='image"+z+"' alt='image' />")
+                    $('#status_holder').css("display", "none");
                 }
             }
         })
