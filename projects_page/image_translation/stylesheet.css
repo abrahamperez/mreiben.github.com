@@ -45,6 +45,10 @@ body {
 }
 
 /*layout*/
+@font-face {
+	font-family: "Existence-Light";
+	src: url(Existence-Light.otf) format("truetype");
+}
 #image_canvas {
 	display: inline-block;
 }
@@ -53,20 +57,30 @@ body {
 }
 body {
 	width: 100%;
+	background-image: url(texture_background.jpg);
 }
 #banner {
-
-	display: block;
-	margin: 0 auto;
+	width: 100%;
+	text-align: center;
+	margin-top: 30px;
+}
+#search_container {
+	text-align: center;
 }
 /*elements*/
 h1 {
+	font-family: "Existence-Light";
 	font-size: 50px;
 }
 h3 {
+	font-family: "Existence-Light";
 	font-size: 20px;
+	margin: 10px 0;
 }
 .photo {
 	width: 300px;
 	border: solid 1px white;
+}
+#user_input {
+	
 }
