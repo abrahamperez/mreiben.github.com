@@ -42,7 +42,7 @@ $(document).ready(function() {
                 photo_url = "http://farm"+photo_farm+".staticflickr.com/"+photo_server+"/"+photo_id+"_"+photo_secret+".jpg";
             })).done(function(){
                 // append the photo to the page
-                $('#image_canvas').append("<img class='photo' src='"+photo_url+"' id='"+img_id+"' alt='image' />");
+                $('#image_canvas').append("<img class='photo' src='"+photo_url+"' id='"+imgId+"' alt='image' />");
             });
         }
     })
