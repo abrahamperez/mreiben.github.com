@@ -49,11 +49,35 @@ body {
 	font-family: "Existence-Light";
 	src: url(Existence-Light.otf) format("truetype");
 }
+@-webkit-keyframes pulse {
+	from {
+		opacity: 0.0;
+		font-size: 100%;
+	}
+	to {
+		opacity: 1.0;
+		font-size: 150%;
+	}
+}
 #image_canvas {
-	display: inline-block;
+	display: none;
+	width: 99%;
+	text-align:center;
 }
 #status_holder {
+	height: 30px;
+}
+#progress {
+	font-family: "Existence-Light";
+	font-size: 20px;
+	width: 100%;
 	display: none;
+	text-align: center;
+	margin-top: 10px;
+	-webkit-animation-name: pulse;
+	-webkit-animation-iteration-count: 2;
+	-webkit-animation-direction: alternate;
+	-webkit-animation-duration: 1s;
 }
 body {
 	width: 100%;
@@ -80,7 +104,5 @@ h3 {
 .photo {
 	width: 300px;
 	border: solid 1px white;
-}
-#user_input {
-	
+	margin-right: 10px;
 }
