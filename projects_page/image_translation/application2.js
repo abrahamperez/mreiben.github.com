@@ -39,7 +39,7 @@ $(document).ready(function() {
                 $('#image_canvas').append("<img class='photo' src='"+photo_url+"' id='"+imgId+"' alt='image' />");
                 })
         }
-        $('#image_canvas').delay(2000).fadeIn(750);
+        $('#image_canvas').delay(2200).fadeIn(750);
         $('#progress').delay(1000).fadeOut(750);
     });
 });
