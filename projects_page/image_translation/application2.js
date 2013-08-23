@@ -41,6 +41,5 @@ $(document).ready(function() {
         }
         $('#image_canvas').delay(2000).fadeIn(750);
         $('#progress').delay(1000).fadeOut(750);
-        $('input').val([]);
     });
 });
