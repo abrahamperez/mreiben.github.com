@@ -1,4 +1,8 @@
 $(document).ready(function() {
+	function ui_sort() {
+		$("#image_canvas").sortable({placeholder: "ui-sortable-placeholder"});
+	}
+	ui_sort();
     var url_array = [];
     $('#submit_button').on('click', function(){
         event.preventDefault();
@@ -33,7 +37,7 @@ $(document).ready(function() {
                 var photo_server = photo.server;
                 var photo_id = photo.id;
                 var photo_secret = photo.secret;
-                photo_url = "http://farm"+photo_farm+".staticflickr.com/"+photo_server+"/"+photo_id+"_"+photo_secret+".jpg";
+                photo_url = "http://farm"+photo_farm+".staticflickr.com/"+photo_server+"/"+photo_id+"_"+photo_secret+"_m.jpg";
                 })).done(function(){
                 // append the photo to the page
                 $('#image_canvas').append("<img class='photo' src='"+photo_url+"' id='"+imgId+"' alt='image' />");

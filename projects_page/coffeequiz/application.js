@@ -63,40 +63,42 @@ $(document).ready(function() {
         }
         if (numberCorrect == 1) {
             $(".score_cup").css("display", "none")
-            $("#score_cup1").css("display", "inline")
+            $("#score_cup1").fadeIn();
         }
         else if (numberCorrect == 2) {
             $(".score_cup").css("display", "none")
-            $("#score_cup2").css("display", "inline")
+            $("#score_cup2").fadeIn();
         }
         else if (numberCorrect == 3) {
             $(".score_cup").css("display", "none")
-            $("#score_cup3").css("display", "inline")
+            $("#score_cup3").fadeIn();
         }
         else if (numberCorrect == 4) {
             $(".score_cup").css("display", "none")
-            $("#score_cup4").css("display", "inline")
+            $("#score_cup4").fadeIn();
         }
         else if (numberCorrect == 5) {
             $(".score_cup").css("display", "none")
-            $("#score_cup5").css("display", "inline")
+            $("#score_cup5").fadeIn();
         }
     }
-    
+
     function nextQuestion() {
         if (currentQuestion < 5) {
             $(".question").remove();
             $("#answer_holder input").remove();
             $("#answer_holder span").remove();
+			$("#last_question_fact").hide();
             var newQuestion = '<span class="question">'+questions[currentQuestion].question+'</span><br><div id="answer_holder"><input type="radio" name="option" class="option" value="0"><span class="answer">'+questions[currentQuestion].choices[0]+'</span><br><input type="radio" name="option" class="option" value="1"><span class="answer">'+questions[currentQuestion].choices[1]+'</span><br><input type="radio" name="option" class="option" value="2"><span class="answer">'+questions[currentQuestion].choices[2]+'</span><br><input type="radio" name="option" class="option" value="3"><span class="answer">'+questions[currentQuestion].choices[3]+'</span><br></div><div id="button_holder"><input type="button" id="submit" value="Submit Answer"><span id="hint"></span><input type="button" id="retry_button" value="Try Again!"></div>';
             $("#question_wrapper").html(newQuestion);
             var lastFact= questions[currentQuestion-1].fact;
-            $("#last_question_fact").html(lastFact);
+            $("#last_question_fact").html(lastFact).fadeIn();
         }
         else {
             $(".question").remove();
             $("#answer_holder input").remove();
             $("#answer_holder span").remove();
+			$("#last_question_fact").fadeOut();
             $("#submit").css("display", "none");
             $("#retry_button").css("display", "inline");
             var lastFact= questions[currentQuestion-1].fact;
