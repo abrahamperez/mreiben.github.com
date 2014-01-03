@@ -2,18 +2,118 @@
 
 <html lang="en">
 	<head>
-		<title>Jason's Thinkful Page</title>
+		<title>Jason Eiben</title>
+		<meta charset="UTF-8">
+		<meta name="Jason Eiben Portfolio" content="Jason Eiben Portfolio">
 		<link rel="stylesheet" href="stylesheet.css">
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1/jquery-ui.min.js"></script>
+		<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+		<script type="text/javascript" src="application.js"></script>
 	</head>
-	
 	<body>
-		<h2>Jason's Thinkful Projects</h2>
-		<ul>
-			<li><a href="http://mreiben.github.com/projects_page/googlepage/index.html">Google Page Project</a></li>
-			<li><a href="http://mreiben.github.com/projects_page/37signals/index.html">37signals Project</a></li>
-			<li><a href="http://mreiben.github.com/projects_page/hucklebuckle/index.html">HuckleBuckle</a></li>
-			<li><a href="http://mreiben.github.com/projects_page/shoppinglist/index.html">Shopping List</a></li>
-			<li><a href="http://mreiben.github.com/projects_page/coffeequiz/index.html">Coffee Quiz</a></li>
-			<li><a href="http://mreiben.github.com/projects_page/image_translation/index.html">Image Translation API Hack</a></li>
-		<h5>More to come...</h5>
+		<header>
+			<div id="nav_holder">
+				<p id="nametag">Jason Eiben</p>
+				<ul id="nav_list">
+					<li id="bio_link" class="nav_link">Bio</li>
+					<li id="skills_link" class="nav_link">Skills</li>
+					<li id="interests_link" class="nav_link">Interests</li>
+					<li id="contact_link" class="nav_link">Contact</li>
+				</ul>
+			</div>
+		</header>
+		<span class="anchor" id="bio_anchor"></span>
+		<div id="bio_holder" class="content">
+			<div id="bio_text">
+				<h1>Hi, I'm Jason!</h1>
+				<p id="tagline">I teach 11th Grade English at a charter school in the Bronx, and I'm interested in using technology to build reading skills for struggling students.</p>
+			</div>
+			<div id="image_holder">
+				<img id="bio_img" src="profile.png">
+			</div>
+		</div>
+		<span class="anchor" id="skills_anchor"></span>
+		<div id="skills_holder" class="content">
+			<p>Skills!</p>
+			<h1>Put timeline here</h1>
+		</div>
+		<span class="anchor" id="interests_anchor"></span>
+		<div id="interests_holder" class="content">
+			<div id="icon_wrapper">
+				<div class="interest">
+					<img id="programming" class="interest_icon" src="programming_icon.png">
+				</div>
+				<div class="interest">
+					<img id="3d" class="interest_icon" src="3d.png">
+				</div>
+				<div class="interest">
+					<img id="coffee" class="interest_icon" src="coffee_bean.png">
+				</div>
+			</div>
+			<div id="info_wrapper">
+				<div class="interest_info" id="programming_info">
+					<h1>Computer Programming</h1>
+					<h3>I'm passionate about learning new skills and providing opportunities for my students to do so as well.  Some of the practices that I have both studied and taught include:</h3>
+					<ul id="coding_list">
+						<li>HTML & CSS</li>
+						<li>JavaScript</li>
+						<li>JQuery</li>
+						<li>Git</li>
+						<li>AJAX/JSON</li>
+					</ul>
+					<br>
+					<h1>Current Projects</h1>
+					<ul id="projects_list">
+						<li>Coursework in Ruby and Python</li>
+						<li>Data Visualization with D3.js</li>
+						<li>Web Design and Intro to Programming (School Clubs)</li>
+					</ul>
+				</div>
+				<div class="interest_info" id="3d_info">
+					<h1>3D Printing & Design</h1>
+					<img src="printer.jpg" class="photo">
+					<img src="cookie_cutters.jpg" class="photo">
+					<h3>In 2012 my girlfriend and I built a 3D printer.  Now we're learning to build 3D models using AutoCAD and Blender!</h3>
+				</div>
+				<div class="interest_info" id="coffee_info">
+					<h1>Coffee Snobbery</h1>
+					<h3>I have been roasting my own coffee since 2006, when I burned some green coffee beans in a popcorn popper.  I enjoy coffee from all over the world, particularly Eastern Africa and Central America.</h3>
+					<img src="coffee_map.png">
+					<ul>
+				</div>
+			</div>
+		</div>
+		<span class="anchor" id="contact_anchor"></span>
+		<div id="contact_holder" class="content">
+			<div id="contact_form">
+				<div id="form_holder">
+					<h1>Contact Me</h1>
+					<h3>Don't hesitate to reach out to me with questions or comments about my current projects or to say hi!</h3>
+					<form action:"MAILTO:jason.eiben@gmail.com" method="post" id="form" enctype="text/plain">
+						<br>
+						Your Name:
+						<input type="text" name="name" id="name" class="inputField" value=" ">
+						<br>
+						Your E-mail:
+						<input type="text" name="email" id="email" class="inputField" value=" ">
+						<br>
+						Message:
+						<input type="text" name="comment" id="comment" class="inputField" value=" " size="53">
+						<br>
+						<input type="submit" class="button" value="Send">
+						<input type="reset" class="button" value="Reset">
+					</form>
+				</div>
+			</div>
+			<div id="social_holder">
+				<img class="contact_icon" src="twitter.png" id="twitter">
+				<img class="contact_icon" src="instagram.png" id="instagram">
+				<img class="contact_icon" src="prezi.png" id="prezi">
+				<img class="contact_icon" src="github.png" id="github">
+			</div>
+		</div>
+		<div id="copyright_holder">
+			<p id="copyright">© 2014 Jason Eiben</p>
+		</div>
 	</body>
