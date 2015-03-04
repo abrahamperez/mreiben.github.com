@@ -47,7 +47,8 @@ $(document).ready(function(){
   });
   
   //clear the board and reset the cards
-  $('clear').click(function(){
+  $('#clear').click(function(){
+    click_count = 0;
     $('p').css('opacity', '0');
     $('card_holder').html('');
     var shuffled_array = shuffle(card_array);
