@@ -25,10 +25,10 @@ $(document).ready(function(){
   
   //general game flow, clicking on cards to reveal content
   var click_count = 0; //at start of game, no clicks have happened
-  var first_click =; //create variables to keep track of selections
-  var second_click =;
+  var first_click = "first"; //create variables to keep track of selections
+  var second_click = "second";
   $('.card').click(function(){
-    if(click_count == 0){
+    if(click_count === 0){
       $(this).find('p').css('opacity', '1').addClass('clicked');
       first_click = $(this).find('p').text();
     }
