@@ -40,7 +40,9 @@ $(document).ready(function(){
         $('.clicked').css('font-weight', 'bold').removeClass('clicked');
       }
       else {
-        $('.clicked').css('opacity', '0').removeClass('clicked');
+        setTimeout(function(){
+          $('.clicked').css('opacity', '0').removeClass('clicked');
+        }, 1000);
       }
       click_count = 0;
     }
