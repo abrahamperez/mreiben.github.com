@@ -27,6 +27,7 @@ p {
   opacity: 1;
   width: 120px;
   margin: 0 auto;
+  padding-top: 0px;
   border: 1px;
   border-style: dotted;
 }
