@@ -31,6 +31,7 @@ $(document).ready(function(){
     if(click_count === 0){
       $(this).find('p').css('opacity', '1').addClass('clicked');
       first_click = $(this).find('p').text();
+      click_count = 1;
     }
     else {
       $(this).find('p').css('opacity', '1').addClass('clicked');
@@ -41,6 +42,7 @@ $(document).ready(function(){
       else {
         $('.clicked').css('opacity', '0').removeClass('clicked');
       }
+      click_count = 0;
     }
   });
 });
