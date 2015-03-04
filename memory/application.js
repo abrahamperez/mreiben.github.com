@@ -36,13 +36,11 @@ $(document).ready(function(){
     else {
       $(this).find('p').css('opacity', '1').addClass('clicked');
       second_click = $(this).find('p').text();
-      if(first_click == second_click){
+      if(first_click === second_click){
         $('.clicked').css('font-weight', 'bold').removeClass('clicked');
       }
       else {
-        setTimeout(function(){
-          $('.clicked').css('opacity', '0').removeClass('clicked');
-        }, 1000);
+        setTimeout(function(){$('.clicked').css('opacity', '0').removeClass('clicked')}, 1000);
       }
       click_count = 0;
     }
