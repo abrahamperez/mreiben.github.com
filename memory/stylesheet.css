@@ -9,7 +9,7 @@ h1 {
 .card {
   display: inline-block;
   width: 100px;
-  height: 150px;
+  height: 130px;
   border: 2px solid;
   border-radius: 10px;
   border-color: #8C8F8C;
@@ -17,7 +17,7 @@ h1 {
   margin-bottom: 15px;
 }
 p {
-  text-align: center;
+  margin: 0 auto;
   opacity: 1;
   width: 50px;
 }
