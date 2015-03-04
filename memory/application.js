@@ -1,5 +1,7 @@
 $(document).ready(function(){
   var card_array = ["fish", "fish", "turtle", "turtle", "pig", "pig", "dog", "dog", "cat", "cat", "snake", "snake", "bird", "bird", "goat", "goat", "hamster", "hamster", "dragon", "dragon"]
+  
+  //function that takes an array and returns a randomly shuffled version
   function shuffle(array) {
     var currentIndex = array.length, temporaryValue, randomIndex ;
     // While there remain elements to shuffle...
@@ -16,7 +18,29 @@ $(document).ready(function(){
   }
   var shuffled_array = shuffle(card_array);
   
+  //populate page with cards with content from randomized array
   for(i in shuffled_array){
     $('#card_holder').append('<div class="card"><p>'+shuffled_array[i]+'</p></div>');
   }
+  
+  //general game flow, clicking on cards to reveal content
+  var click_count = 0; //at start of game, no clicks have happened
+  var first_click =; //create variables to keep track of selections
+  var second_click =;
+  $('.card').click(function(){
+    if(click_count == 0){
+      $(this).find('p').css('opacity', '1').addClass('clicked');
+      first_click = $(this).find('p').text();
+    }
+    else {
+      $(this).find('p').css('opacity', '1').addClass('clicked');
+      second_click = $(this).find('p').text();
+      if(first_click == second_click){
+        $('.clicked').css('font-weight', 'bold').removeClass('clicked');
+      }
+      else {
+        $('.clicked').css('opacity', '0').removeClass('clicked');
+      }
+    }
+  });
 });
