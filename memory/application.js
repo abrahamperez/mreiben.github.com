@@ -50,7 +50,7 @@ $(document).ready(function(){
   $('#clear').click(function(){
     click_count = 0;
     $('p').css('opacity', '0');
-    $('card_holder').html('');
+    $('#card_holder').html('');
     shuffled_array = shuffle(card_array);
   
     //populate page with cards with content from randomized array
