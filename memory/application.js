@@ -45,4 +45,16 @@ $(document).ready(function(){
       click_count = 0;
     }
   });
+  
+  //clear the board and reset the cards
+  $('clear').click(function(){
+    $('p').css('opacity', '0');
+    $('card_holder').html('');
+    var shuffled_array = shuffle(card_array);
+  
+    //populate page with cards with content from randomized array
+    for(i in shuffled_array){
+      $('#card_holder').append('<div class="card"><p>'+shuffled_array[i]+'</p></div>');
+    }
+  });
 });
