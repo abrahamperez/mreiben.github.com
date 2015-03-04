@@ -17,9 +17,10 @@ h1 {
   margin-bottom: 15px;
 }
 p {
+  text-align: center;
   margin: 0 auto;
   opacity: 1;
-  width: 50px;
+  width: 80px;
 }
 #clear {
   opacity: 1;
